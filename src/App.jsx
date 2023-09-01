@@ -12,7 +12,7 @@ function App() {
       {/* Navbar */}
       <Navbar />
       <VideoComponent />
-      <div className="lg:max-w-[90vw] xl:max-w-[80vw] mx-auto">
+      <div className="mx-auto">
         {/* Recommended */}
         <Recomended />
         {/* SpecialOffers */}
