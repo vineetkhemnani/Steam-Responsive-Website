@@ -30,9 +30,7 @@ const SpecialOffer = () => {
         rows={1}
         gap={10}
         loop={true}
-        responsiveLayout={[
-          { breakpoint: 800, cols: 1, rows: 3, gap: 10, loop: true },
-        ]}
+        
       >
         {cards.map((card) => (
           <Carousel.Item>

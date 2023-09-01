@@ -10,9 +10,7 @@ const Browse = () => {
         rows={1}
         gap={10}
         loop={true}
-        responsiveLayout={[
-          { breakpoint: 800, cols: 1, rows: 3, gap: 10, loop: true },
-        ]}
+        
       >
         {browseCategories.map((category) => (
           <Carousel.Item>
