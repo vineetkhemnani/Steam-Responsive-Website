@@ -26,9 +26,9 @@ const Recommended = () => {
         loop={true}
         
       >
-        {items.map((item) => (
-          <Carousel.Item>
-            <ItemRecommended src={item.srcA} name={item.name} />
+        {items.map((item,index) => (
+          <Carousel.Item key={index}>
+            <ItemRecommended src={item.srcA} name={item.name} key={index} />
           </Carousel.Item>
         ))}
       </Carousel>

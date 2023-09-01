@@ -12,9 +12,9 @@ const Browse = () => {
         loop={true}
         
       >
-        {browseCategories.map((category) => (
-          <Carousel.Item>
-            <CategoryCard img={category.img} name={category.name} />
+        {browseCategories.map((category,index) => (
+          <Carousel.Item key={index}>
+            <CategoryCard img={category.img} name={category.name} key={index} />
           </Carousel.Item>
         ))}
       </Carousel>

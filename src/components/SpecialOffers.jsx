@@ -2,19 +2,19 @@ import gaming from '../assets/gaming.jpg'
 import Card from './Card'
 import one from '../assets/1.jpg'
 import two from '../assets/2.jpg'
-import Carousel from 'better-react-carousel';
+import Carousel from 'better-react-carousel'
 const SpecialOffer = () => {
   const cards = [
-    { wallpaper: one, title: 'Gaming room' },
-    { wallpaper: two, title: 'Gaming room' },
-    { wallpaper: one, title: 'Gaming room' },
-    { wallpaper: two, title: 'Gaming room' },
-    { wallpaper: one, title: 'Gaming room' },
-    { wallpaper: two, title: 'Gaming room' },
-    { wallpaper: one, title: 'Gaming room' },
-    { wallpaper: two, title: 'Gaming room' },
-    { wallpaper: one, title: 'Gaming room' },
-    { wallpaper: two, title: 'Gaming room' },
+    { id: 1, wallpaper: one, title: 'Gaming room' },
+    { id: 2, wallpaper: two, title: 'Gaming room' },
+    { id: 3, wallpaper: one, title: 'Gaming room' },
+    { id: 4, wallpaper: two, title: 'Gaming room' },
+    { id: 5, wallpaper: one, title: 'Gaming room' },
+    { id: 6, wallpaper: two, title: 'Gaming room' },
+    { id: 7, wallpaper: one, title: 'Gaming room' },
+    { id: 8, wallpaper: two, title: 'Gaming room' },
+    { id: 9, wallpaper: one, title: 'Gaming room' },
+    { id: 10, wallpaper: two, title: 'Gaming room' },
   ]
   return (
     <div className="mx-[2rem]  ">
@@ -25,15 +25,9 @@ const SpecialOffer = () => {
           <Card wallpaper={card.wallpaper} title={card.title} />
         ))}
       </div> */}
-      <Carousel
-        cols={3}
-        rows={1}
-        gap={10}
-        loop={true}
-        
-      >
+      <Carousel cols={3} rows={1} gap={10} loop={true}>
         {cards.map((card) => (
-          <Carousel.Item>
+          <Carousel.Item key={card.id}>
             <Card wallpaper={card.wallpaper} title={card.title} />
             {/* <img width="100%" src="https://picsum.photos/800/600?random=1" /> */}
           </Carousel.Item>
