@@ -19,7 +19,7 @@ const Recommended = () => {
       <p>FEATURED AND RECOMMENDED</p>
 
       {/* Featured */}
-      <Carousel
+      {/* <Carousel
         cols={1}
         rows={1}
         gap={10}
@@ -31,7 +31,7 @@ const Recommended = () => {
             <ItemRecommended src={item.srcA} name={item.name} key={index} />
           </Carousel.Item>
         ))}
-      </Carousel>
+      </Carousel> */}
     </div>
   )
 }

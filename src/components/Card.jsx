@@ -2,10 +2,10 @@ const Card = ({ wallpaper, title }) => {
   return (
     <div>
       <div>
-        <img src={wallpaper} alt="" className="w-full"/>
+        <img src={wallpaper} alt="" className="w-full" />
         <div className="bg-blue-800 h-[8rem]">
-          <p className="text-[18px] text-white pl-4  pt-2">Christmas Deal</p>
-          <p className="text-[12px] text-white pl-4  pt-2">
+          <p className="text-[18px] text-white pl-4 pt-2">Christmas Deal</p>
+          <p className="text-[12px] text-white pl-4 pt-2">
             Offer ending in 2 days
           </p>
           <div className="max-w-[6rem]">

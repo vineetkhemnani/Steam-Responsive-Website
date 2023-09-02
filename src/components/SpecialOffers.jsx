@@ -25,14 +25,15 @@ const SpecialOffer = () => {
           <Card wallpaper={card.wallpaper} title={card.title} />
         ))}
       </div> */}
-      <Carousel cols={3} rows={1} gap={10} loop={true}>
+      {/* <Carousel cols={3} rows={1} gap={10} loop={true}>
         {cards.map((card) => (
           <Carousel.Item key={card.id}>
             <Card wallpaper={card.wallpaper} title={card.title} />
-            {/* <img width="100%" src="https://picsum.photos/800/600?random=1" /> */}
+           
           </Carousel.Item>
         ))}
-      </Carousel>
+      </Carousel> */}
+      
     </div>
   )
 }
